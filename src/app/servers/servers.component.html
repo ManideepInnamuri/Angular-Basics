@@ -4,13 +4,13 @@
 <!-- <p>{{serverName}}</p> -->
 <button class="btn btn-primary" [disabled]="allowNewServer" (click)="onCreateServer()">Add Server</button>
 <!-- <button class="btn btn-success" (click)="showSecret=!showSecret">Display Details</button> -->
-<button class="btn btn-success" (click)="onToggleDetails()">Display Details</button>
+<!-- <button class="btn btn-success" (click)="onToggleDetails()">Display Details</button>
 
 <p *ngIf="showSecret">Secret Password=tuna</p>
 <div *ngFor="let log of logs; let i = index" [ngStyle]="{backgroundColor:i>=4?'blue':'transparent'}"
     [ngClass]="{'white-text':i>=4}">
     {{i}}
-</div>
+</div> -->
 <!-- <p [innerText]="allowNewServer"></p> -->
 <!-- <p>{{serverCreationStatus}}</p> -->
 <!-- <ng-template [ngIf]="serverCreated">
@@ -27,4 +27,4 @@
 <input type="text" class="form-control" [(ngModel)]="UserName">
 <p>{{UserName}}</p>
 <button class="btn btn-primary" [disabled]="UserName===''" (click)="onClickreset()">Reset User</button> -->
-<!-- <app-server *ngFor="let server of servers"></app-server> -->
+<app-server *ngFor="let server of servers"></app-server>
